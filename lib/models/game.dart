@@ -54,6 +54,21 @@ class Game {
           'assets/images/rl5.jpg',
         ],
       ),
+      Game(
+        'assets/images/legend1.jpg',
+        'assets/images/legend_logo.jpg',
+        'League of Legend',
+        'Adventure',
+        4.8,
+        382,
+        324,
+        "Un jeu dans lequel vous incarnez un personnages avec des pouvoirs. A vous de montrer votre valeur",
+        [
+          'assets/images/legend2.jpg',
+          'assets/images/legend3.jpg',
+          'assets/images/legend4.jpg',
+        ],
+      ),
     ];
   }
 }

@@ -1,7 +1,7 @@
 import 'package:consomation_api_boutique/models/game.dart';
+import 'package:consomation_api_boutique/pages/detail/widgets/header.dart';
 import 'package:consomation_api_boutique/pages/home/widgets/description.dart';
 import 'package:consomation_api_boutique/pages/home/widgets/galery.dart';
-import 'package:consomation_api_boutique/pages/home/widgets/header.dart';
 import 'package:consomation_api_boutique/pages/home/widgets/review.dart';
 import 'package:flutter/material.dart';
 

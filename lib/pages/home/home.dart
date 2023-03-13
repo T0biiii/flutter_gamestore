@@ -1,4 +1,6 @@
+import 'package:consomation_api_boutique/pages/home/widgets/Avatar.dart';
 import 'package:consomation_api_boutique/pages/home/widgets/category.dart';
+import 'package:consomation_api_boutique/pages/home/widgets/header.dart';
 import 'package:consomation_api_boutique/pages/home/widgets/search.dart';
 import 'package:flutter/material.dart';
 
@@ -35,7 +37,8 @@ class HomePage extends StatelessWidget {
             ),
             Column(
               children: [
-                // const HeaderSection(),
+                const AvatarSection(),
+                 //HeaderSection(),
                 const SearchSection(),
                 CategorySection(),
               ],

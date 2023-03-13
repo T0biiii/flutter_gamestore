@@ -9,7 +9,7 @@ class CategorySection extends StatelessWidget {
     {
       'icon': Icons.track_changes_outlined,
       'color': const Color(0xFF605CF4),
-      'title': 'Arcabe'
+      'title': 'Arcade'
     },
     {
       'icon': Icons.sports_motorsports_outlined,
@@ -41,7 +41,7 @@ class CategorySection extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            height: 140,
+            height: 141,
             padding: const EdgeInsets.all(25),
             child: ListView.separated(
               scrollDirection: Axis.horizontal,
