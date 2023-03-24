@@ -1,6 +1,8 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
 
+import '../../../login/login.dart';
+
 class AvatarSection extends StatelessWidget {
   const AvatarSection({super.key});
 
@@ -19,7 +21,7 @@ class AvatarSection extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Welcome,",
+                "Bienvenue,",
                 style: TextStyle(
                   fontSize: 22,
                   color: Colors.white,
@@ -28,7 +30,7 @@ class AvatarSection extends StatelessWidget {
               ),
               SizedBox(height: 5),
               Text(
-                "What would you like to play?",
+                "A quel jeu voulez-vous jouer",
                 style: TextStyle(
                   fontSize: 19,
                   color: Colors.white,
@@ -36,12 +38,17 @@ class AvatarSection extends StatelessWidget {
               ),
             ],
           ),
-          CircleAvatar(
-            child: Image.asset(
-              'assets/images/avatar.png',
-              fit: BoxFit.cover,
+          InkWell(
+             onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => login()),
+              );
+            },
+            child: CircleAvatar(
+              backgroundImage: AssetImage('assets/images/avatar.png'),
             ),
-          )
+          ),
         ],
       ),
     );

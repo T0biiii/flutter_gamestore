@@ -1,6 +1,6 @@
 import 'package:consomation_api_boutique/models/game.dart';
+import 'package:consomation_api_boutique/pages/detail/detail.dart';
 import 'package:flutter/material.dart';
-
 
 class NewestGame extends StatelessWidget {
   NewestGame({super.key});
@@ -90,22 +90,32 @@ class NewestGame extends StatelessWidget {
                                 ],
                               ),
                               /**  Bouton Install*/
-                              Container(
-                                padding: const EdgeInsets.symmetric(
-                                  vertical: 5,
-                                  horizontal: 15,
-                                ),
-                                decoration: BoxDecoration(
-                                  color: const Color(0xFF5F67EA),
-                                  borderRadius: BorderRadius.circular(15),
-                                ),
-                                child: const Text(
-                                  'Install',
-                                  style: TextStyle(
-                                    color: Colors.white,
+                              GestureDetector(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => DetailPage(game),
+                                    ),
+                                  );
+                                },
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                    vertical: 5,
+                                    horizontal: 15,
+                                  ),
+                                  decoration: BoxDecoration(
+                                    color: const Color(0xFF5F67EA),
+                                    borderRadius: BorderRadius.circular(15),
+                                  ),
+                                  child: const Text(
+                                    'Detail',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
                                   ),
                                 ),
-                              )
+                              ),
                             ],
                           )
                         ],

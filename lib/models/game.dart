@@ -58,11 +58,11 @@ class Game {
         'assets/images/legend1.jpg',
         'assets/images/legend_logo.jpg',
         'League of Legend',
-        'Adventure',
-        4.8,
-        382,
-        324,
-        "Un jeu dans lequel vous incarnez un personnages avec des pouvoirs. A vous de montrer votre valeur",
+        'MMORPG',
+        4.8, // score d'étoile 
+        382, // nombre de Téléchargement 
+        324, // review
+        "Un jeu dans lequel vous incarnez un personnages avec des pouvoirs. A vous de montrer votre valeur.",
         [
           'assets/images/legend2.jpg',
           'assets/images/legend3.jpg',
